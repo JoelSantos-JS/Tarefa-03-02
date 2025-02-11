@@ -142,14 +142,6 @@ void init_display() {
 
 
 
-// Função LED vermelho
-void blink_red_led() {
-    gpio_put(LED_RED, 1);   // Correto, mantém padrão
-    sleep_ms(100);
-    gpio_put(LED_RED, 0);
-    sleep_ms(100);
-}
-
 // Função de callback para os botões
 void button_callback(uint gpio, uint32_t events) {
     if (gpio == BUTTON_A) {
@@ -203,6 +195,7 @@ void update_index(bool increment, int *i) {
     }
 }
 
+
 // Função principal
 int main() {
     stdio_init_all();
@@ -214,6 +207,9 @@ int main() {
 
     PIO pio = pio0;
     uint sm = configurar_matriz(pio);
+
+    display_init_msg();
+    sleep_ms(4000);
 
     ssd1306_fill(&display, false);
     ssd1306_draw_string(&display, "Sistema", 10, 10);
