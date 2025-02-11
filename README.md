@@ -94,7 +94,7 @@ projeto/
 
 ## Vídeo Demonstrativo
 Confira um vídeo demonstrativo do projeto:
-[![Vídeo no YouTube](https://img.youtube.com/vi/NRTx64LAKVc/0.jpg)](https://youtu.be/NRTx64LAKVc)
+[![Vídeo no YouTube](https://img.youtube.com/vi/NRTx64LAKVc/0.jpg)](https://youtu.be/4vaAyvfRAyw)
 
 ## Licença
 Este projeto é distribuído sob a licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
